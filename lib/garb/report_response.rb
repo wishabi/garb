@@ -44,7 +44,7 @@ module Garb
 
     def data
       unless @data
-        @data = MultiJson.load @response_body
+        @data = JSON.parse @response_body
         @data = @data.inject({}) do |data, pair|
           key, value = pair
           data[key.underscore.to_sym] = value

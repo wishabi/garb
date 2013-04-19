@@ -149,7 +149,6 @@ Requirements
 ------------
 
   * active_support >= 2.2
-  * multi_json >= 1.3
 
 Requirements for Testing
 ------------------------

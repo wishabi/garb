@@ -27,7 +27,7 @@ module Garb
               "dxp:definition" => "ga:visitorType==Returning Visitor"
             }
           }
-          entry = MultiJson.load(read_fixture("ga_segment_management.json"))["items"].first
+          entry = JSON.parse(read_fixture("ga_segment_management.json"))["items"].first
           @segment = Segment.new(entry, Session)
         end
 

@@ -6,8 +6,6 @@ require 'net/https'
 require 'cgi'
 require 'ostruct'
 
-require 'multi_json'
-
 module Garb
   autoload :VERSION,          'garb/version'
   
